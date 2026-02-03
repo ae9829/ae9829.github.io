@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Portfolio website of Joosua Lehtolahti, ICT student at JAMK University of Applied Sciences.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" href="images/JL.svg">
+    <link href="styles/bootstrap.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Joosua Lehtolahti</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link fs-5" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link active fs-5" aria-current="page" href="projects.html">Projects</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li>
+                        <a class="nav-link d-flex" href="https://github.com/lathil1" target="_blank" aria-label="GitHub profile">
+                        <img src="images/github-mark-white.svg" alt="GitHub" class="github-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="m-5">Projects</h1>
+    <div class="accordion" id="projectsAccordion">
+
+        <div class="accordion-item mx-auto">
+        <h2 class="accordion-header" id="project1Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project1" aria-expanded="false" aria-controls="project1">
+            Portfolio Website
+            </button>
+        </h2>
+        <div id="project1" class="accordion-collapse collapse" aria-labelledby="project1Heading" data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+            <p>A portfolio of my skills and projects made with HTML and CSS</p>
+            <ul>
+                <li>Responsive design</li>
+                <li>Animated components</li>
+                <li>Bootstrap usage</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+
+        <div class="accordion-item mx-auto">
+        <h2 class="accordion-header" id="project2Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project2" aria-expanded="false" aria-controls="project2">
+            Python twitch bot
+            </button>
+        </h2>
+        <div id="project2" class="accordion-collapse collapse" aria-labelledby="project2Heading" data-bs-parent="#projectsAccordion">
+            <div class="accordion-body row align-items-center">
+            <div class="col-12 col-lg-7">
+                <p>
+                I wanted to make a project for a Python course <br> <br>
+                I asked around what I should make and one person said I should make a twitch bot. My first thought was "that's too advanced" but then I thought "well I have time and the internet". <br> <br>
+                So I started doing research and managed to make a twitch chat bot that takes info from a spreadsheet and responds with the desired information. <br> <br>
+                During the project I learned a lot about Python and that a lot of things aren't as advanced as they seem. <br> <br>
+                <a href="https://github.com/Lathil1/todaybot">The bot's github</a>
+                </p>
+            </div>
+            <div class="col-12 col-lg-5 text-center">
+                <img src="images/todaybot.png" alt="image of the bot in action" class="rounded img-fluid" id="todaybot">
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="accordion-item mx-auto">
+        <h2 class="accordion-header" id="project3Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project3" aria-expanded="false" aria-controls="project3">
+            Lumin
+            </button>
+        </h2>
+        <div id="project3" class="accordion-collapse collapse" aria-labelledby="project3Heading" data-bs-parent="#projectsAccordion">
+            <div class="accordion-body">
+            <img src="images/Lumin.png" alt="Lumin" class="rounded img-fluid mb-5">
+            <p>
+                Over the summer of 2024 I took a Unity course and wanted to put my skills to the test. Coincidentally a friend of mine asked me to join a game jam with him a couple weeks later. <br> <br>
+                We made a small 2D puzzle game called Lumin. During that I learned a lot about Unity and C# as well as using Git and working in a team. <br> <br>
+                The source code and more information can be found on <a href="https://github.com/Xineraa/ps-gamejam-15">Github.</a>
+            </p>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

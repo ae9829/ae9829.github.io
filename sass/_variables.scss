@@ -1,0 +1,14 @@
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+@import 'colors';
+
+$body-color: $primary;
+$body-bg: $black;
+$bar-fill: $primary;
+$bar-bg: $secondary;
+$bar-height: 20px;
+$bar-radius: 10px;
+$anim-time: 1.3s;
+
+$font-body: 'Roboto', sans-serif;
+$font-heading: 'Montserrat', sans-serif;

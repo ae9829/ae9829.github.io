@@ -1,0 +1,60 @@
+@use 'colors' as *;
+
+.nav-item .nav-link {
+    &:hover {
+        background-color: $primary-hover;
+    }
+}
+
+.navbar {
+    background-color: $tertiary-bg !important;
+}
+
+a {
+    color: $primary !important;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+#portrait {
+    margin: 2%;
+    height: auto;
+    border: solid $primary;
+}
+
+.navbar-toggler {
+    background-color: $secondary;
+    &:hover {
+        background-color: $secondary-hover;
+    }
+}
+
+.accordion-item {
+    width: 80%;
+}
+.accordion-body {
+    width: 40%;
+}
+
+.github-icon {
+  height: 24px;
+  width: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .accordion-body {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #portrait {
+        width: 20%;
+    }
+    .accordion-body {
+        width: 100%;
+    }
+}

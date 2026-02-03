@@ -1,0 +1,35 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "colors" as *;
+
+
+
+.skill-item {
+  width: 80%;
+  margin-bottom: 25px;
+  .skill-title {
+    @include title;
+  }
+
+  .skill-bar-wrapper {
+    background-color: $bar-bg;
+    @include rounded-bar($bar-radius);
+    height: $bar-height;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .skill-bar {
+    height: 100%;
+    background-color: $bar-fill;
+    border-radius: inherit;
+    width: 0%;
+    animation: fill-bar $anim-time ease-out forwards;
+    animation-delay: 0.1s;
+  }
+}
+
+@keyframes fill-bar {
+  from { width: 0%; }
+  to   { width: var(--level); }
+}
